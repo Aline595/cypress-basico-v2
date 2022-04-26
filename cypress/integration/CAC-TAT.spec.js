@@ -28,6 +28,8 @@ describe('Central de Atendimento ao cliente TAT', function(){
         cy.get('#open-text-area').type('Teste')
         // .click irá clicar np bptão anteriormente descrito
         cy.get('button[type="submit"]').click()  // Atenção as aspas!!
+
+        cy.get('.success').should('be.visible')
     })
 
 })
